@@ -2,21 +2,21 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --foreground: #dedede;
+  --primary: #00abef;
+  --card: #fff;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --bg-primary: #00abef;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #333;
+  --foreground: #fff;
+  --primary: #00abef;
+  --card: #1d1d1d;
 }
 
 body {
@@ -25,4 +25,10 @@ body {
   direction: rtl;
   text-align: right;
   font-family: Vazir, Tahoma, sans-serif;
+}
+
+@layer components {
+  .card-shadow {
+    @apply shadow-[0_3px_10px_rgb(0,0,0,0.3)];
+  }
 }
