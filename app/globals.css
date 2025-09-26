@@ -1,15 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #dedede;
+  --background: #fff;
+  --foreground: #333;
   --primary: #00abef;
   --card: #fff;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --bg-primary: #00abef;
 }
 
 .dark {
@@ -27,8 +22,41 @@ body {
   font-family: Vazir, Tahoma, sans-serif;
 }
 
+/* keyframes خارج از @layer */
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+}
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-14px);
+  }
+}
+@keyframes float3 {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-6px);
+  }
+}
+
 @layer components {
   .card-shadow {
-    @apply shadow-[0_3px_10px_rgb(0,0,0,0.3)];
+    @apply shadow-[0_4px_12px_rgb(0,0,0,0.2)];
+  }
+
+  .circle-icon {
+    @apply flex items-center justify-center rounded-full w-11 h-11 md:w-14 md:h-14 bg-[#e7e7e780] absolute dark:bg-[#0000004b];
   }
 }

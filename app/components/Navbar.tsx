@@ -13,8 +13,13 @@ const navItems = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [isDark, setIsDark] = useState(false);
+
   useEffect(() => {
     setActiveSection("home");
+    // بررسی کلاس dark روی html یا body
+    const _body = document.querySelector("body");
+    setIsDark(_body?.classList.contains("dark") ?? false);
   }, []);
 
   const scrollToSection = useCallback((sectionId: string) => {
@@ -27,9 +32,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-center">
+    <div className="fixed top-12 md:right-6 right-0 mx-auto flex flex-col gap-2.5 items-center">
       <button
-        className="bg-background card-shadow p-3 md:hidden rounded z-50 md:right-auto md:left-1/2 md:-translate-x-1/2"
+        className="bg-[var(--background)] card-shadow p-3 md:hidden rounded z-50 md:right-auto md:left-1/2 md:-translate-x-1/2"
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
@@ -37,20 +42,11 @@ const Navbar = () => {
         {/*eslint-disable-next-line @next/next/no-img-element
          */}
         <img
-          src="/menu_icon_light.svg"
+          src={isDark ? "/menu_icon_dark.svg" : "/menu_icon_light.svg"}
           alt="menu icon"
           width={20}
           height={20}
-          className="block transform scale-x-[-1] dark:hidden"
-        />
-        {/*eslint-disable-next-line @next/next/no-img-element
-         */}
-        <img
-          src="/menu_icon_dark.svg"
-          alt="menu icon"
-          width={20}
-          height={20}
-          className="transform scale-x-[-1] hidden dark:block"
+          className="transform scale-x-[-1]"
         />
       </button>
       <nav
@@ -71,8 +67,8 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li key={item.id}>
               <button
-                className={cn("rounded p-1", {
-                  "bg-[#00abef] text-white": activeSection === item.id,
+                className={cn("rounded p-1 px-3 duration-300 ease-out", {
+                  "bg-[var(--primary)] text-white": activeSection === item.id,
                 })}
                 onClick={() => {
                   setActiveSection(item.id);

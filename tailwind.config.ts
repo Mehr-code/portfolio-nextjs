@@ -12,7 +12,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#00abef",
+        primary: "var(--primary)",
         card: "var(--card)",
       },
     },
