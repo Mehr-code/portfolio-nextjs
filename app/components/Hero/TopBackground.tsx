@@ -18,7 +18,7 @@ const icons = [
   },
   {
     src: "/bracket_icon.svg",
-    top: "35%",
+    top: "15%",
     left: "75%",
     mdTop: "30%",
     mdLeft: "70%",
@@ -29,7 +29,7 @@ const icons = [
   },
   {
     src: "/github_icon.svg",
-    top: "60%",
+    top: "80%",
     left: "20%",
     mdTop: "55%",
     mdLeft: "18%",

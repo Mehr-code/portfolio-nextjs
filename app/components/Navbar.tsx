@@ -74,7 +74,7 @@ const Navbar = () => {
             <li key={item.id}>
               <button
                 className={cn(
-                  "rounded p-1 px-3 duration-300 ease-out whitespace-nowrap", // prevent text wrapping
+                  "rounded p-1 px-3 duration-300 ease-out whitespace-nowrap cursor-pointer", // prevent text wrapping
                   {
                     "bg-[var(--primary)] text-white": activeSection === item.id, // active state
                   }
