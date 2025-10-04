@@ -64,8 +64,8 @@ const icons = [
     src: "/stack_icon.svg",
     top: "55%",
     left: "60%",
-    mdTop: "50%",
-    mdLeft: "55%",
+    mdTop: "90%",
+    mdLeft: "10%",
     size: 26,
     opacity: 0.85,
     mobileVisible: false,
@@ -158,14 +158,14 @@ const TopBackground = () => {
 
       {/* Dark mode background for desktop */}
       <div
-        className={`absolute top-0 z-10 w-full h-[1200px] bg-repeat-x bg-[url('/top_bg_dark.svg')] bg-[auto-auto] hidden ${
+        className={`absolute top-0 z-10 w-full h-[1200px] bg-repeat-x bg-[url('/top_bg_dark3.svg')] bg-[auto-auto] hidden opacity-70 ${
           isDark ? "md:block" : ""
         }`}
       />
 
       {/* Dark mode background for mobile */}
       <div
-        className={`absolute top-0 z-10 w-full h-[1000px] bg-repeat-x bg-[url('/top_bg_mobile_dark.svg')] bg-[auto-auto] ${
+        className={`absolute top-0 z-10 w-full h-[1000px] bg-repeat-x bg-[url('/top_bg_mobile_dark2.svg')] bg-[auto-auto] ${
           isDark ? "md:hidden" : "hidden"
         }`}
       />

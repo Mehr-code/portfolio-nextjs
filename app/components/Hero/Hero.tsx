@@ -1,23 +1,29 @@
 import React from "react";
+import Image from "next/image";
 
 function Hero() {
   return (
-    <section className="relative flex flex-row items-center z-20 mx-auto">
-      <div className="flex flex-col gap-[13px] items-center">
-        <h1 className="text-2xl text-center font-semibold block">
-          <span className="mr-3">😃</span>
-          چطوری؟ من مهرانم
-          <span className="block text-[27px] highlight mt-2">
-            ی مهندس نرم افزار
+    <section className="relative flex flex-row-reverse items-center mx-auto z-20 md:gap-[50px] lg:gap-[200px] md:mx-10 justify-center">
+      {/* متن و دکمه */}
+      <div className="flex flex-col items-center gap-[13px] md:items-end md:gap-[34px] md:my-[58px]">
+        <h1 className="text-3xl font-semibold leading-snug text-center md:text-[44px] md:text-right">
+          <span className="block">
+            چطوری؟ من <span className="">مهرانم</span>
+            <span className="mx-2">😄</span>
+          </span>
+          <span className="block mt-2 text-[30px] md:text-[53px] highlight">
+            مهندس نرم‌افزارم
           </span>
         </h1>
-        <p className="text-center text-sm mx-6">
-          دوس دارم چیز میز بسازم برای خودم و لذت می برم از سر در آوردن کارکرد
-          های کامپیوتر های مختلف، مخصوصا لپ تاپ توی اتاقم
+
+        <p className="mx-6 text-sm text-center md:w-[410px] md:text-[22px] md:text-end">
+          دوس دارم چیز میز بسازم برای خودم و لذت می‌برم از سر درآوردن کارکرد
+          کامپیوترهای مختلف، مخصوصاً لپ‌تاپ توی اتاقم 💻
         </p>
+
         <a
           href="mailto:papa.molla8@gmail.com"
-          className="self-center bg-[var(--primary)] text-white p-2.5 rounded flex gap-2.5 items-center text-sm"
+          className="flex items-center gap-2.5 self-center rounded bg-[var(--primary)] p-2.5 text-sm text-white md:self-end md:text-xl/6 transition-all duration-300 hover:brightness-110"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -27,6 +33,31 @@ function Hero() {
           />
           ارتباط ایمیلی
         </a>
+      </div>
+
+      {/* عکس‌ها */}
+      <div className="relative hidden md:block">
+        <Image
+          src="/profile_light_blue.png"
+          width={372}
+          height={425}
+          alt="light purple rectangle"
+          className="absolute left-0 -z-10 w-[372px] h-[425px]"
+        />
+        <Image
+          src="/profile_dark_blue.png"
+          width={450}
+          height={430}
+          alt="dark purple rectangle"
+          className="absolute left-0 -z-10"
+        />
+        <Image
+          src="/profile_picture.jpg"
+          width={357}
+          height={400}
+          alt="Profile picture"
+          className="z-10 ml-[7.7px] my-[6.5px] min-w-[340px] h-[400px] rounded-3xl"
+        />
       </div>
     </section>
   );
