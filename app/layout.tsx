@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body className="dark">{children}</body>
+      <body className="">{children}</body>
     </html>
   );
 }

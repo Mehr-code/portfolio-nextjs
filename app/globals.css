@@ -17,7 +17,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Vazir, Tahoma, sans-serif;
+  font-family: Vazir, Tahoma, sans-serif, "Poppins";
 }
 
 /* keyframes خارج از @layer */
@@ -59,5 +59,11 @@ body {
   }
   .highlight {
     @apply bg-[var(--primary)] text-white px-5 rounded-[4px];
+  }
+  .section_contents {
+    @apply w-full flex flex-col items-center gap-10 md:gap-[50px];
+  }
+  .card {
+    @apply bg-[var(--card)] rounded-lg shadow-[0_4px_12px_rgb(0,0,0,0.2)];
   }
 }
