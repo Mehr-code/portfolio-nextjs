@@ -144,14 +144,14 @@ const TopBackground = () => {
 
       {/* Light mode background for desktop */}
       <div
-        className={`absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg.svg')] bg-[auto-auto] hidden ${
+        className={`absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg2.svg')] bg-[auto-auto] hidden ${
           isDark ? "" : "md:block"
         }`}
       />
 
       {/* Light mode background for mobile */}
       <div
-        className={`absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mob.svg')] bg-[auto-auto] ${
+        className={`absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mob2.svg')] bg-[auto-auto] ${
           isDark ? "hidden" : "md:hidden"
         }`}
       />
