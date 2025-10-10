@@ -1,0 +1,40 @@
+[
+  {
+    "thumbnail": "/hamkariProjects_thumbnail.png",
+    "title": "Hamkari Projects",
+    "link": {
+      "label": "همکاری چه پروژه ای؟",
+      "url": "https://github.com/Mehr-code/hamkari-projects"
+    },
+    "description": "یک task manager برای پروژه هایی که استادم به من و هم تیمی هایم محول میکردن، ساختم ولی استفاده نکردن :(",
+    "languageIcons": [
+      "/nextjs_icon.png",
+      "/tailwind_icon.png",
+      "/expressjs_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/nodeXfer_thumbnail.png",
+    "title": "NodeXfer",
+    "link": {
+      "label": "نود چه ایکسفری؟",
+      "url": "https://github.com/Mehr-code/nodexfer"
+    },
+    "description": "ی برنامه برای اشتراک فایل تحت شبکه بین لپ تاپ خودم و داداشم ولی قابل استفاده برای هر لپ تاپی که دلم بخواد",
+    "languageIcons": [
+      "/nextjs_icon.png",
+      "/tailwind_icon.png",
+      "/expressjs_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/splashCards_thumbnail.png",
+    "title": "Splash Cards",
+    "link": {
+      "label": "اسپلش چه کارتی؟",
+      "url": "https://github.com/Mehr-code/splash-cards"
+    },
+    "description": "ی برنامه اندرویدی برای اینکه یادم بمونه کدوم کارت های اشتراک استخرمو استفاده کردم و کدومو نکردم با ریست هفتگی",
+    "languageIcons": ["/ts_icon.png", "/react_icon.png", "android_icon.png"]
+  }
+]

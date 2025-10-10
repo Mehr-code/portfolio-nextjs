@@ -28,9 +28,11 @@ const Navbar = () => {
   const scrollToSection = useCallback((sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section?.scrollIntoView({
-        behavior: "smooth",
-      });
+      const yOffset = -100;
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   }, []);
 

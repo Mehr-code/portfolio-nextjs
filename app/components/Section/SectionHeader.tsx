@@ -11,8 +11,8 @@ function SectionHeader({ plainText, highlightText }: Props) {
       dir="rtl"
       className="text-[22px] md:text-[35px] px-20 text-center my-10"
     >
-      <span className="highlight px-2 whitespace-nowrap">{highlightText}</span>
-      {plainText}{" "}
+      <span className="highlight px-2 whitespace-nowrap">{highlightText}</span>{" "}
+      {plainText}
     </h2>
   );
 }
