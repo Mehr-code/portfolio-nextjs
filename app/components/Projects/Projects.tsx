@@ -36,7 +36,7 @@ function Projects() {
         className="absolute hidden md:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
       />
       <Image
-        src="/projects_highlight_mobile.svg"
+        src="/projects_highlight_mobile2.svg"
         alt="mobile background highlight decoration"
         width={321}
         height={321}
