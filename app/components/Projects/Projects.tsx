@@ -40,7 +40,7 @@ function Projects() {
         alt="mobile background highlight decoration"
         width={321}
         height={321}
-        className="absolute md:hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
+        className="absolute block md:hidden top-0 -translate-y-1/2 -z-10"
       />
     </SectionContainer>
   );

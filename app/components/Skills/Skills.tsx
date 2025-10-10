@@ -32,7 +32,7 @@ const Skills = () => {
           alt="tech stack bg"
           width={569}
           height={373}
-          className="hidden dark:hidden md:block -z-10 absolute -right-[125px] -top-[39px] transform scale-x-[-1]"
+          className="hidden dark:hidden md:block -z-10 absolute right-0 -top-0 transform scale-x-[-1]"
         />
       </>
     </SectionContainer>
