@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero/Hero";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
+import Testimonials from "./Testimonials/Testimonials";
 
 function Section() {
   return (
@@ -9,6 +10,7 @@ function Section() {
       <Hero />
       <Skills />
       <Projects />
+      <Testimonials />
     </main>
   );
 }

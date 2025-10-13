@@ -15,6 +15,19 @@ export default {
         primary: "var(--primary)",
         card: "var(--card)",
       },
+      keyframes: {
+        scroll: {
+          "0%": {
+            transform: "translateX(-5.2%)",
+          },
+          "100%": {
+            transform: "translateX(-55.2%)",
+          },
+        },
+      },
+      animation: {
+        scroll: "scroll 25s linear infinite",
+      },
     },
   },
   plugins: [],

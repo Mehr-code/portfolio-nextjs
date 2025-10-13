@@ -48,6 +48,14 @@ body {
     transform: translate(-50%, -50%) translateY(-6px);
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 @layer components {
   .card-shadow {
@@ -65,5 +73,9 @@ body {
   }
   .card {
     @apply bg-[var(--card)] rounded-lg shadow-[0_4px_12px_rgb(0,0,0,0.25)];
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
   }
 }

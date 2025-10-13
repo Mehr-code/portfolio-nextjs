@@ -7,7 +7,7 @@ const navItems = [
   { id: "home", label: "خانه" },
   { id: "skills", label: "مهارت‌ها" },
   { id: "projects", label: "پروژه‌ها" },
-  { id: "testimonials", label: "رضایت کاربران" },
+  { id: "testimonials", label: "رضایت همکاران" },
   { id: "experience", label: "سابقه کاری" },
   { id: "contact", label: "تماس" },
 ];
@@ -27,11 +27,19 @@ const Navbar = () => {
   // Smooth scroll to section
   const scrollToSection = useCallback((sectionId: string) => {
     const section = document.getElementById(sectionId);
-    if (section) {
+    if (!section) return;
+
+    // breakpoint موبایل
+    const isMobile = window.innerWidth < 768;
+
+    // اگر موبایل بود offset نده، فقط scrollIntoView ساده
+    if (isMobile) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // دسکتاپ و تبلت → offset
       const yOffset = -100;
       const y =
         section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   }, []);
