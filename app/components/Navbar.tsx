@@ -8,7 +8,7 @@ const navItems = [
   { id: "skills", label: "مهارت‌ها" },
   { id: "projects", label: "پروژه‌ها" },
   { id: "testimonials", label: "رضایت همکاران" },
-  { id: "experience", label: "سابقه کاری" },
+  { id: "experiences", label: "سابقه کاری" },
   { id: "contact", label: "تماس" },
 ];
 

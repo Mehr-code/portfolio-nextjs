@@ -13,7 +13,7 @@ const Skills = () => {
           plainText="هایی که ایده های من رو شکل میدن ✨"
           highlightText="تکنولوژی"
         />
-        <div className="card w-full mt-1 px-[33px] py-[27px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[19px] md:gap-[33px]">
+        <div className="card md:w-[70%] w-[90%] mt-1 px-[33px] py-[27px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[19px] md:gap-[33px]">
           {skills.map((skill, id) => (
             <Skill key={id} name={skill.name} icon={skill.icon} />
           ))}

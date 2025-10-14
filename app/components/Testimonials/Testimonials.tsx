@@ -9,7 +9,7 @@ function Testimonials() {
     <SectionContainer id="testimonials">
       <div className="section-contents">
         <SectionHeader plainText="و نظر همکاران من 💁‍♂️" highlightText="رضایت" />
-        <div className="w-full overflow-x-clip">
+        <div className="md:w-[70%] w-full overflow-x-clip">
           <div className="flex items-stretch justify-start gap-[23px] pr-[23px] min-w-max animate-scroll">
             {[...testimonials, ...testimonials].map((testimonial, id) => (
               <Testimonial

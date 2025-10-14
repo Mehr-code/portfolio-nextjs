@@ -68,7 +68,7 @@ body {
   .highlight {
     @apply bg-[var(--primary)] text-white px-5 rounded-[4px];
   }
-  .section_contents {
+  .section-contents {
     @apply w-full flex flex-col items-center gap-10 md:gap-[50px];
   }
   .card {

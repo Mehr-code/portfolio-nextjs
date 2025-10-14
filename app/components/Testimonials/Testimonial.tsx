@@ -17,11 +17,11 @@ function Testimonial({ image, name, role, description }: Props) {
           alt={`image of ${name}`}
           width={38}
           height={28}
-          className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-sm"
+          className="w-10 h-10 md:w-16 md:h-16 rounded-full object-cover shadow-lg"
         />
 
         <div className="flex flex-col">
-          <p className="text-sm" style={{ direction: "rtl" }}>
+          <p className="text-sm md:text-lg" style={{ direction: "rtl" }}>
             {name}
           </p>
           <p className="text-sm text-[#777]">{role}</p>
