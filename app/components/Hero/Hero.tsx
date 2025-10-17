@@ -16,7 +16,10 @@ function Hero() {
           </span>
         </h1>
 
-        <p className="mx-6 text-sm text-center md:w-[410px] md:text-[22px] md:text-end">
+        <p
+          className="mx-6 text-sm text-center md:w-[410px] md:text-[22px] md:text-end"
+          dir="rtl"
+        >
           دوس دارم چیز میز بسازم برای خودم و لذت می‌برم از سر درآوردن کارکرد
           کامپیوترهای مختلف، مخصوصاً لپ‌تاپ توی اتاقم 💻
         </p>

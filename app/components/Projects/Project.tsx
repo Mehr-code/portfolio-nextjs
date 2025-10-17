@@ -31,7 +31,7 @@ function Project({
           <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
           <a
             href={link.url}
-            className="flex px-[5px] py-[3px] gap-1 bg-[#deddde] rounded text-[14px]"
+            className="flex px-[8px] py-[5px] gap-1 bg-[var(--primary)] rounded text-[14px]"
           >
             <span className="hidden md:block">{link.label}</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
